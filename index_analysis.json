@@ -1,0 +1,33 @@
+{
+  "analyses": {
+    "SPX": {
+      "symbol": "SPX",
+      "name": "S&P 500",
+      "analysis_time": "2026-02-15T12:42:58.889153",
+      "timeframes": {}
+    },
+    "ND100": {
+      "symbol": "ND100",
+      "name": "Nasdaq 100",
+      "analysis_time": "2026-02-15T12:42:58.980011",
+      "timeframes": {}
+    },
+    "JP225": {
+      "symbol": "JP225",
+      "name": "Nikkei 225",
+      "analysis_time": "2026-02-15T12:42:59.021816",
+      "timeframes": {}
+    },
+    "DAX": {
+      "symbol": "DAX",
+      "name": "DAX 40",
+      "analysis_time": "2026-02-15T12:42:59.067096",
+      "timeframes": {}
+    }
+  },
+  "trading_plan": {
+    "week": "下周",
+    "generated_at": "2026-02-15T12:42:59.116877",
+    "indices": {}
+  }
+}

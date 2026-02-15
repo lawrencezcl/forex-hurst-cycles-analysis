@@ -1,0 +1,284 @@
+{
+  "BTC": {
+    "symbol": "BTC",
+    "analysis_time": "2026-02-15T11:26:45.418594",
+    "data_range": "2025-02-16 至 2026-02-15",
+    "current_price": 69480.75,
+    "ma_system": {
+      "current_price": 69480.75,
+      "MA5": 68262.528,
+      "MA10": 69027.00499999999,
+      "MA20": 74141.7235,
+      "MA60": 84816.56216666667,
+      "MA120": 91193.96350000001,
+      "short_trend": "空头排列",
+      "short_signal": "观望",
+      "mid_trend": "中期空头趋势",
+      "cross_signal": "无交叉信号"
+    },
+    "macd": {
+      "MACD": -5063.771791576684,
+      "Signal": -5225.431072971025,
+      "Histogram": 161.65928139434072,
+      "signal": "MACD金叉 - 买入信号",
+      "momentum": "动能转换中"
+    },
+    "rsi": {
+      "RSI": 37.149256012826115,
+      "status": "弱势区",
+      "signal": "观望"
+    },
+    "kdj": {
+      "K": 61.60827158943447,
+      "D": 69.50122022770593,
+      "J": 45.822374312891554,
+      "signal": "KDJ死叉 - 卖出信号",
+      "j_status": "J值正常"
+    },
+    "bollinger": {
+      "Upper": 89089.07897134675,
+      "Middle": 74141.7235,
+      "Lower": 59194.36802865324,
+      "Width": 40.321035891070856,
+      "Current_Price": 69480.75,
+      "BB_Percent": 0.3440870189735294,
+      "status": "中轨附近运行",
+      "squeeze": "布林带正常"
+    },
+    "support_resistance": {
+      "current_price": 69480.75,
+      "resistance_levels": [
+        97963.62,
+        94825.27,
+        91147.01,
+        90541.8,
+        90476.81
+      ],
+      "support_levels": [
+        90003.46,
+        89200.0,
+        87156.0,
+        86675.0,
+        86350.0
+      ],
+      "nearest_resistance": 97963.62,
+      "nearest_support": null,
+      "resistance_distance_pct": 40.993901188458665,
+      "support_distance_pct": null
+    },
+    "fibonacci": {
+      "swing_high": 116410.06,
+      "swing_low": 60001.0,
+      "current_price": 69480.75,
+      "fib_levels": {
+        "0%": 116410.06,
+        "23.6%": 103097.52184,
+        "38.2%": 94861.79908,
+        "50%": 88205.53,
+        "61.8%": 81549.26092,
+        "78.6%": 72072.53884,
+        "100%": 60001.0
+      },
+      "position": "当前价格位于 100% 之上"
+    },
+    "volume": {
+      "current_volume": 0.0,
+      "volume_ma5": 0.0,
+      "volume_ma20": 0.0,
+      "volume_ratio": 1.0,
+      "pattern": "量价正常",
+      "signal": "中性"
+    },
+    "trend": {
+      "high_trend": "高点下移 - 空头趋势",
+      "low_trend": "低点上移 - 多头趋势",
+      "overall": "震荡趋势",
+      "action": "区间操作"
+    },
+    "kline_patterns": [],
+    "prediction": {
+      "signals": [
+        [
+          "均线",
+          -2,
+          "空"
+        ],
+        [
+          "MACD",
+          2,
+          "多"
+        ],
+        [
+          "RSI",
+          -1,
+          "空"
+        ],
+        [
+          "KDJ",
+          -2,
+          "空"
+        ],
+        [
+          "布林",
+          0,
+          "中"
+        ],
+        [
+          "量价",
+          0,
+          "中"
+        ],
+        [
+          "趋势",
+          0,
+          "震荡"
+        ]
+      ],
+      "total_score": -3,
+      "prediction": "震荡/中性",
+      "action": "观望或轻仓操作",
+      "confidence": "低"
+    }
+  },
+  "ETH": {
+    "symbol": "ETH",
+    "analysis_time": "2026-02-15T11:26:45.641751",
+    "data_range": "2025-02-16 至 2026-02-15",
+    "current_price": 2059.99,
+    "ma_system": {
+      "current_price": 2059.99,
+      "MA5": 2016.654,
+      "MA10": 2045.205,
+      "MA20": 2264.8385000000003,
+      "MA60": 2797.0,
+      "MA120": 3062.0484999999994,
+      "short_trend": "空头排列",
+      "short_signal": "观望",
+      "mid_trend": "中期空头趋势",
+      "cross_signal": "无交叉信号"
+    },
+    "macd": {
+      "MACD": -234.41372649675895,
+      "Signal": -248.3606858156378,
+      "Histogram": 13.94695931887884,
+      "signal": "MACD多头运行",
+      "momentum": "多头动能增强"
+    },
+    "rsi": {
+      "RSI": 35.6255483984059,
+      "status": "弱势区",
+      "signal": "观望"
+    },
+    "kdj": {
+      "K": 64.32609458458417,
+      "D": 72.94817631964303,
+      "J": 47.08193111446647,
+      "signal": "KDJ死叉 - 卖出信号",
+      "j_status": "J值正常"
+    },
+    "bollinger": {
+      "Upper": 2958.0303460650503,
+      "Middle": 2264.8385000000003,
+      "Lower": 1571.6466539349506,
+      "Width": 61.21335769107154,
+      "Current_Price": 2059.99,
+      "BB_Percent": 0.3522425637557359,
+      "status": "中轨附近运行",
+      "squeeze": "布林带正常"
+    },
+    "support_resistance": {
+      "current_price": 2059.99,
+      "resistance_levels": [
+        3402.82,
+        3368.17,
+        3307.4,
+        3076.52,
+        3056.07
+      ],
+      "support_levels": [
+        3253.0,
+        3065.0,
+        3054.57,
+        2910.33,
+        2888.75
+      ],
+      "nearest_resistance": 3402.82,
+      "nearest_support": null,
+      "resistance_distance_pct": 65.18623876814938,
+      "support_distance_pct": null
+    },
+    "fibonacci": {
+      "swing_high": 4252.83,
+      "swing_low": 1747.0,
+      "current_price": 2059.99,
+      "fib_levels": {
+        "0%": 4252.83,
+        "23.6%": 3661.45412,
+        "38.2%": 3295.6029399999998,
+        "50%": 2999.915,
+        "61.8%": 2704.22706,
+        "78.6%": 2283.24762,
+        "100%": 1747.0
+      },
+      "position": "当前价格位于 100% 之上"
+    },
+    "volume": {
+      "current_volume": 0.0,
+      "volume_ma5": 0.0,
+      "volume_ma20": 0.0,
+      "volume_ratio": 1.0,
+      "pattern": "量价正常",
+      "signal": "中性"
+    },
+    "trend": {
+      "high_trend": "高点下移 - 空头趋势",
+      "low_trend": "低点上移 - 多头趋势",
+      "overall": "震荡趋势",
+      "action": "区间操作"
+    },
+    "kline_patterns": [],
+    "prediction": {
+      "signals": [
+        [
+          "均线",
+          -2,
+          "空"
+        ],
+        [
+          "MACD",
+          1,
+          "多"
+        ],
+        [
+          "RSI",
+          -1,
+          "空"
+        ],
+        [
+          "KDJ",
+          -2,
+          "空"
+        ],
+        [
+          "布林",
+          0,
+          "中"
+        ],
+        [
+          "量价",
+          0,
+          "中"
+        ],
+        [
+          "趋势",
+          0,
+          "震荡"
+        ]
+      ],
+      "total_score": -4,
+      "prediction": "偏空",
+      "action": "可考虑卖出",
+      "confidence": "中"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "BTC": {
+    "initial_capital": 10000,
+    "final_capital": 12181.736055391013,
+    "total_return_pct": 21.81736055391013,
+    "num_trades": 2,
+    "winning_trades": 1,
+    "losing_trades": 1,
+    "win_rate_pct": 50.0,
+    "max_drawdown_pct": -16.178867783308064,
+    "trades": [
+      {
+        "entry_date": "2025-04-17",
+        "exit_date": "2025-08-24",
+        "entry_price": 84961.97,
+        "exit_price": 113478.0,
+        "pnl_pct": 33.56328719778979
+      },
+      {
+        "entry_date": "2025-09-16",
+        "exit_date": "2025-11-03",
+        "entry_price": 116832.56,
+        "exit_price": 106557.98,
+        "pnl_pct": -8.794277896504195
+      }
+    ]
+  },
+  "ETH": {
+    "initial_capital": 10000,
+    "final_capital": 15573.897331646252,
+    "total_return_pct": 55.73897331646253,
+    "num_trades": 6,
+    "winning_trades": 2,
+    "losing_trades": 4,
+    "win_rate_pct": 33.33333333333333,
+    "max_drawdown_pct": -40.564182608788116,
+    "trades": [
+      {
+        "entry_date": "2025-04-14",
+        "exit_date": "2025-04-18",
+        "entry_price": 1623.56,
+        "exit_price": 1588.49,
+        "pnl_pct": -2.160067998718861
+      },
+      {
+        "entry_date": "2025-04-25",
+        "exit_date": "2025-05-23",
+        "entry_price": 1784.45,
+        "exit_price": 2526.56,
+        "pnl_pct": 41.58760402364874
+      },
+      {
+        "entry_date": "2025-07-02",
+        "exit_date": "2025-09-04",
+        "entry_price": 2568.73,
+        "exit_price": 4297.8,
+        "pnl_pct": 67.31225157957435
+      },
+      {
+        "entry_date": "2025-09-17",
+        "exit_date": "2025-09-19",
+        "entry_price": 4590.25,
+        "exit_price": 4468.76,
+        "pnl_pct": -2.6466968030063676
+      },
+      {
+        "entry_date": "2025-10-06",
+        "exit_date": "2025-11-03",
+        "entry_price": 4683.06,
+        "exit_price": 3603.6,
+        "pnl_pct": -23.05031325671677
+      },
+      {
+        "entry_date": "2026-01-06",
+        "exit_date": "2026-01-23",
+        "entry_price": 3296.52,
+        "exit_price": 2956.83,
+        "pnl_pct": -10.30450293036293
+      }
+    ]
+  }
+}

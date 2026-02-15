@@ -1,0 +1,258 @@
+{
+  "analysis": {
+    "EUR": {
+      "code": "EUR",
+      "name": "欧元/美元",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 1.1867,
+          "time": "2026-02-13 00:00",
+          "ma": "偏多排列",
+          "ma_score": 1,
+          "macd": "空头",
+          "macd_score": -1,
+          "macd_pos": "零轴上",
+          "rsi": 55.62753496652355,
+          "rsi_status": "强势",
+          "rsi_score": 1,
+          "kdj": "空头",
+          "kdj_score": -1,
+          "trend": "上升",
+          "trend_score": 2,
+          "near_r": 1.2078,
+          "near_s": 1.1764,
+          "total": 3,
+          "dir": "偏多",
+          "act": "可买"
+        }
+      }
+    },
+    "GBP": {
+      "code": "GBP",
+      "name": "英镑/美元",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 1.3648,
+          "time": "2026-02-13 00:00",
+          "ma": "多头排列",
+          "ma_score": 2,
+          "macd": "空头",
+          "macd_score": -1,
+          "macd_pos": "零轴上",
+          "rsi": 54.58174722707456,
+          "rsi_status": "强势",
+          "rsi_score": 1,
+          "kdj": "金叉",
+          "kdj_score": 2,
+          "trend": "震荡",
+          "trend_score": 0,
+          "near_r": 1.3867,
+          "near_s": 1.3411,
+          "total": 6,
+          "dir": "看多",
+          "act": "买入"
+        }
+      }
+    },
+    "JPY": {
+      "code": "JPY",
+      "name": "美元/日元",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 152.68,
+          "time": "2026-02-13 00:00",
+          "ma": "空头排列",
+          "ma_score": -2,
+          "macd": "空头",
+          "macd_score": -1,
+          "macd_pos": "零轴下",
+          "rsi": 35.76224393828039,
+          "rsi_status": "弱势",
+          "rsi_score": -1,
+          "kdj": "空头",
+          "kdj_score": -1,
+          "trend": "震荡",
+          "trend_score": 0,
+          "near_r": 159.45,
+          "near_s": null,
+          "total": -7,
+          "dir": "看空",
+          "act": "卖出"
+        }
+      }
+    },
+    "AUD": {
+      "code": "AUD",
+      "name": "澳元/美元",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 0.7073,
+          "time": "2026-02-13 00:00",
+          "ma": "偏多排列",
+          "ma_score": 1,
+          "macd": "多头",
+          "macd_score": 1,
+          "macd_pos": "零轴上",
+          "rsi": 64.08318675672726,
+          "rsi_status": "强势",
+          "rsi_score": 1,
+          "kdj": "空头",
+          "kdj_score": -1,
+          "trend": "震荡",
+          "trend_score": 0,
+          "near_r": 0.7098,
+          "near_s": 0.6692,
+          "total": 3,
+          "dir": "偏多",
+          "act": "可买"
+        }
+      }
+    },
+    "CAD": {
+      "code": "CAD",
+      "name": "美元/加元",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 1.3617,
+          "time": "2026-02-13 00:00",
+          "ma": "偏空排列",
+          "ma_score": -1,
+          "macd": "空头",
+          "macd_score": -1,
+          "macd_pos": "零轴下",
+          "rsi": 43.83354509415871,
+          "rsi_status": "弱势",
+          "rsi_score": -1,
+          "kdj": "多头",
+          "kdj_score": 1,
+          "trend": "震荡",
+          "trend_score": 0,
+          "near_r": 1.4051,
+          "near_s": null,
+          "total": -3,
+          "dir": "偏空",
+          "act": "可卖"
+        }
+      }
+    },
+    "CNH": {
+      "code": "CNH",
+      "name": "美元/人民币",
+      "timeframes": {
+        "daily": {
+          "tf": "daily",
+          "price": 6.908,
+          "time": "2026-02-13 00:00",
+          "ma": "空头排列",
+          "ma_score": -2,
+          "macd": "空头",
+          "macd_score": -1,
+          "macd_pos": "零轴下",
+          "rsi": 22.35653626607231,
+          "rsi_status": "超卖",
+          "rsi_score": 2,
+          "kdj": "金叉",
+          "kdj_score": 2,
+          "trend": "下降",
+          "trend_score": -2,
+          "near_r": 7.0857,
+          "near_s": null,
+          "total": -3,
+          "dir": "偏空",
+          "act": "可卖"
+        }
+      }
+    }
+  },
+  "summary": [
+    {
+      "code": "EUR",
+      "name": "欧元/美元",
+      "price": 1.1867,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": 3,
+      "weighted": 0.75,
+      "direction": "震荡",
+      "action": "观望",
+      "near_r": 1.2078,
+      "near_s": 1.1764
+    },
+    {
+      "code": "GBP",
+      "name": "英镑/美元",
+      "price": 1.3648,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": 6,
+      "weighted": 1.5,
+      "direction": "偏多",
+      "action": "可买",
+      "near_r": 1.3867,
+      "near_s": 1.3411
+    },
+    {
+      "code": "JPY",
+      "name": "美元/日元",
+      "price": 152.68,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": -7,
+      "weighted": -1.75,
+      "direction": "偏空",
+      "action": "可卖",
+      "near_r": 159.45,
+      "near_s": null
+    },
+    {
+      "code": "AUD",
+      "name": "澳元/美元",
+      "price": 0.7073,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": 3,
+      "weighted": 0.75,
+      "direction": "震荡",
+      "action": "观望",
+      "near_r": 0.7098,
+      "near_s": 0.6692
+    },
+    {
+      "code": "CAD",
+      "name": "美元/加元",
+      "price": 1.3617,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": -3,
+      "weighted": -0.75,
+      "direction": "震荡",
+      "action": "观望",
+      "near_r": 1.4051,
+      "near_s": null
+    },
+    {
+      "code": "CNH",
+      "name": "美元/人民币",
+      "price": 6.908,
+      "score_60m": 0,
+      "score_30m": 0,
+      "score_15m": 0,
+      "score_daily": -3,
+      "weighted": -0.75,
+      "direction": "震荡",
+      "action": "观望",
+      "near_r": 7.0857,
+      "near_s": null
+    }
+  ]
+}

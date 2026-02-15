@@ -1,0 +1,239 @@
+{
+  "SPX": {
+    "name": "S&P 500",
+    "tfs": {
+      "1h": {
+        "tf": "1h",
+        "price": 6835.080078125,
+        "ma": "\u5747\u7ebf\u7ea0\u7f20",
+        "ma_score": 0,
+        "macd": "\u7a7a\u5934",
+        "macd_score": -1,
+        "macd_pos": "\u96f6\u8f74\u4e0b",
+        "rsi": 37.501353069891174,
+        "rsi_status": "\u5f31\u52bf",
+        "rsi_score": -1,
+        "kdj": "\u7a7a\u5934",
+        "kdj_score": -1,
+        "trend": "\u9707\u8361",
+        "trend_score": 0,
+        "resistance": [
+          6993.47998046875,
+          6986.830078125,
+          6980.10009765625
+        ],
+        "support": [
+          6956.77978515625,
+          6911.97021484375,
+          6905.8701171875
+        ],
+        "near_r": 6993.47998046875,
+        "near_s": null,
+        "total": -3,
+        "dir": "\u504f\u7a7a",
+        "act": "\u53ef\u5356"
+      }
+    }
+  },
+  "ND100": {
+    "name": "Nasdaq 100",
+    "tfs": {
+      "daily": {
+        "tf": "daily",
+        "price": 24732.73046875,
+        "ma": "\u7a7a\u5934\u6392\u5217",
+        "ma_score": -2,
+        "macd": "\u7a7a\u5934",
+        "macd_score": -1,
+        "macd_pos": "\u96f6\u8f74\u4e0b",
+        "rsi": 40.78215041862178,
+        "rsi_status": "\u5f31\u52bf",
+        "rsi_score": -1,
+        "kdj": "\u7a7a\u5934",
+        "kdj_score": -1,
+        "trend": "\u4e0b\u964d",
+        "trend_score": -2,
+        "resistance": [
+          26165.080078125,
+          25873.1796875,
+          25840.0390625
+        ],
+        "support": [
+          25418.5390625,
+          25400.16015625,
+          25266.19921875
+        ],
+        "near_r": 26165.080078125,
+        "near_s": null,
+        "total": -9,
+        "dir": "\u770b\u7a7a",
+        "act": "\u5356\u51fa"
+      },
+      "1h": {
+        "tf": "1h",
+        "price": 24737.861328125,
+        "ma": "\u5747\u7ebf\u7ea0\u7f20",
+        "ma_score": 0,
+        "macd": "\u7a7a\u5934",
+        "macd_score": -1,
+        "macd_pos": "\u96f6\u8f74\u4e0b",
+        "rsi": 39.52620279027145,
+        "rsi_status": "\u5f31\u52bf",
+        "rsi_score": -1,
+        "kdj": "\u7a7a\u5934",
+        "kdj_score": -1,
+        "trend": "\u9707\u8361",
+        "trend_score": 0,
+        "resistance": [
+          25381.80859375,
+          25361.482421875,
+          25347.380859375
+        ],
+        "support": [
+          25176.42578125,
+          24982.298828125,
+          24876.279296875
+        ],
+        "near_r": 25381.80859375,
+        "near_s": null,
+        "total": -3,
+        "dir": "\u504f\u7a7a",
+        "act": "\u53ef\u5356"
+      }
+    }
+  },
+  "JP225": {
+    "name": "Nikkei 225",
+    "tfs": {
+      "daily": {
+        "tf": "daily",
+        "price": 56941.96875,
+        "ma": "\u591a\u5934\u6392\u5217",
+        "ma_score": 2,
+        "macd": "\u591a\u5934",
+        "macd_score": 1,
+        "macd_pos": "\u96f6\u8f74\u4e0a",
+        "rsi": 66.99940677801877,
+        "rsi_status": "\u5f3a\u52bf",
+        "rsi_score": 1,
+        "kdj": "\u6b7b\u53c9",
+        "kdj_score": -2,
+        "trend": "\u4e0a\u5347",
+        "trend_score": 2,
+        "resistance": [
+          54782.828125,
+          54487.3203125,
+          54050.83984375
+        ],
+        "support": [
+          52950.1484375,
+          52655.1796875,
+          52637.66015625
+        ],
+        "near_r": null,
+        "near_s": 52637.66015625,
+        "total": 6,
+        "dir": "\u770b\u591a",
+        "act": "\u4e70\u5165"
+      },
+      "1h": {
+        "tf": "1h",
+        "price": 57074.98828125,
+        "ma": "\u7a7a\u5934\u6392\u5217",
+        "ma_score": -2,
+        "macd": "\u7a7a\u5934",
+        "macd_score": -1,
+        "macd_pos": "\u96f6\u8f74\u4e0a",
+        "rsi": 52.79745263985943,
+        "rsi_status": "\u5f3a\u52bf",
+        "rsi_score": 1,
+        "kdj": "\u7a7a\u5934",
+        "kdj_score": -1,
+        "trend": "\u9707\u8361",
+        "trend_score": 0,
+        "resistance": [
+          58015.078125,
+          57960.19140625,
+          57864.87890625
+        ],
+        "support": [
+          57554.48828125,
+          57549.48046875,
+          56652.48046875
+        ],
+        "near_r": 58015.078125,
+        "near_s": 56652.48046875,
+        "total": -5,
+        "dir": "\u770b\u7a7a",
+        "act": "\u5356\u51fa"
+      }
+    }
+  },
+  "DAX": {
+    "name": "DAX 40",
+    "tfs": {
+      "daily": {
+        "tf": "daily",
+        "price": 24914.880859375,
+        "ma": "\u5747\u7ebf\u7ea0\u7f20",
+        "ma_score": 0,
+        "macd": "\u91d1\u53c9",
+        "macd_score": 2,
+        "macd_pos": "\u96f6\u8f74\u4e0a",
+        "rsi": 54.07970586866051,
+        "rsi_status": "\u5f3a\u52bf",
+        "rsi_score": 1,
+        "kdj": "\u91d1\u53c9",
+        "kdj_score": 2,
+        "trend": "\u9707\u8361",
+        "trend_score": 0,
+        "resistance": [
+          25507.7890625,
+          25098.7109375,
+          25020.220703125
+        ],
+        "support": [
+          24349.5390625,
+          24272.619140625,
+          24266.330078125
+        ],
+        "near_r": 25507.7890625,
+        "near_s": 24266.330078125,
+        "total": 5,
+        "dir": "\u770b\u591a",
+        "act": "\u4e70\u5165"
+      },
+      "1h": {
+        "tf": "1h",
+        "price": 24903.349609375,
+        "ma": "\u5747\u7ebf\u7ea0\u7f20",
+        "ma_score": 0,
+        "macd": "\u7a7a\u5934",
+        "macd_score": -1,
+        "macd_pos": "\u96f6\u8f74\u4e0b",
+        "rsi": 47.84474875888375,
+        "rsi_status": "\u5f31\u52bf",
+        "rsi_score": -1,
+        "kdj": "\u591a\u5934",
+        "kdj_score": 1,
+        "trend": "\u9707\u8361",
+        "trend_score": 0,
+        "resistance": [
+          25239.009765625,
+          25075.75,
+          25036.650390625
+        ],
+        "support": [
+          24935.33984375,
+          24847.44921875,
+          24834.7890625
+        ],
+        "near_r": 25239.009765625,
+        "near_s": 24834.7890625,
+        "total": -1,
+        "dir": "\u9707\u8361",
+        "act": "\u89c2\u671b"
+      }
+    }
+  }
+}
