@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔡森技术分析系统 - 实时监控仪表板</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .card-title {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .price {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        .direction {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .long { background: rgba(0,200,83,0.2); color: #00c853; }
+        .short { background: rgba(255,82,82,0.2); color: #ff5252; }
+        .neutral { background: rgba(255,193,7,0.2); color: #ffc107; }
+        .strong-long { background: rgba(0,200,83,0.4); color: #00e676; }
+        .strong-short { background: rgba(255,82,82,0.4); color: #ff1744; }
+        .score-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .score-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s;
+        }
+        .indicators {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .indicator {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .indicator-label {
+            font-size: 0.75em;
+            color: #888;
+            text-transform: uppercase;
+        }
+        .indicator-value {
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+        .trading-plan {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        .trading-plan h4 {
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+        .plan-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .plan-row:last-child {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin: 30px 0 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .section-title.indices { border-left: 4px solid #00d4ff; }
+        .section-title.commodities { border-left: 4px solid #ffc107; }
+        .section-title.crypto { border-left: 4px solid #7b2cbf; }
+        .section-title.forex { border-left: 4px solid #00c853; }
+        .stats-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            flex: 1;
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .stat-label {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+        }
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 25px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,212,255,0.3);
+            transition: transform 0.3s;
+        }
+        .refresh-btn:hover {
+            transform: scale(1.05);
+        }
+        .alignment-good { color: #00c853; }
+        .alignment-bad { color: #ff5252; }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>蔡森技术分析系统</h1>
+        <p class="subtitle">Cai Sen Technical Analysis Dashboard</p>
+        <p class="subtitle" id="update-time"></p>
+    </div>
+
+    <div class="stats-row" id="stats">
+        <div class="stat-box">
+            <div class="stat-value" id="total-long">0</div>
+            <div class="stat-label">看多/偏多</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value" id="total-short">0</div>
+            <div class="stat-label">看空/偏空</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value" id="total-neutral">0</div>
+            <div class="stat-label">震荡</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value" id="total-aligned">0</div>
+            <div class="stat-label">时间框架一致</div>
+        </div>
+    </div>
+
+    <div id="content"></div>
+
+    <button class="refresh-btn" onclick="location.reload()">刷新数据</button>
+
+    <script>
+        let analysisData = null;
+        let plansData = null;
+
+        async function loadData() {
+            try {
+                const [analysisRes, plansRes] = await Promise.all([
+                    fetch('comprehensive_analysis.json'),
+                    fetch('trading_plans.json')
+                ]);
+                analysisData = await analysisRes.json();
+                plansData = await plansRes.json();
+                render();
+            } catch (e) {
+                document.getElementById('content').innerHTML = '<div class="loading">加载数据失败，请确保已运行分析脚本</div>';
+            }
+        }
+
+        function getDirectionClass(dir) {
+            if (dir.includes('强烈看多')) return 'strong-long';
+            if (dir.includes('看多')) return 'long';
+            if (dir.includes('偏多')) return 'long';
+            if (dir.includes('强烈看空')) return 'strong-short';
+            if (dir.includes('看空')) return 'short';
+            if (dir.includes('偏空')) return 'short';
+            return 'neutral';
+        }
+
+        function getScoreColor(score) {
+            if (score >= 4) return '#00c853';
+            if (score >= 2) return '#64dd17';
+            if (score <= -4) return '#ff1744';
+            if (score <= -2) return '#ff5252';
+            return '#ffc107';
+        }
+
+        function getScoreWidth(score) {
+            const normalized = ((score + 10) / 20) * 100;
+            return Math.max(0, Math.min(100, normalized)) + '%';
+        }
+
+        function renderCard(symbol, name, data, plan) {
+            const daily = data.tfs?.daily || {};
+            const hourly = data.tfs?.['1h'] || {};
+            const dir = daily.dir || 'N/A';
+            const score = daily.total || 0;
+            const price = daily.price || 0;
+
+            let html = `
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">${name}</div>
+                            <div style="font-size:0.8em;color:#888">${symbol}</div>
+                        </div>
+                        <div class="direction ${getDirectionClass(dir)}">${dir}</div>
+                    </div>
+                    <div class="price">${price ? price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) : 'N/A'}</div>
+                    <div class="score-bar">
+                        <div class="score-fill" style="width:${getScoreWidth(score)};background:${getScoreColor(score)}"></div>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85em;">
+                        <span>综合得分</span>
+                        <span style="color:${getScoreColor(score)};font-weight:600;">${score}</span>
+                    </div>
+                    <div class="indicators">
+                        <div class="indicator">
+                            <div class="indicator-label">均线</div>
+                            <div class="indicator-value">${daily.ma || 'N/A'}</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-label">MACD</div>
+                            <div class="indicator-value">${daily.macd || 'N/A'}</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-label">RSI</div>
+                            <div class="indicator-value">${daily.rsi ? daily.rsi.toFixed(1) : 'N/A'}</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-label">KDJ</div>
+                            <div class="indicator-value">${daily.kdj || 'N/A'}</div>
+                        </div>
+                    </div>`;
+
+            if (plan && plan.entry_zone) {
+                const aligned = plan.timeframe_alignment?.includes('ALIGNED');
+                html += `
+                    <div class="trading-plan">
+                        <h4>交易计划</h4>
+                        <div class="plan-row">
+                            <span>方向</span>
+                            <span style="color:${plan.bias === 'LONG' ? '#00c853' : plan.bias === 'SHORT' ? '#ff5252' : '#ffc107'}">${plan.bias}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>入场区间</span>
+                            <span>${plan.entry_zone.map(e => e.toFixed(2)).join(' - ')}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>止损</span>
+                            <span style="color:#ff5252">${plan.stop_loss?.toFixed(2) || 'N/A'}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>目标</span>
+                            <span style="color:#00c853">${plan.targets?.map(t => t.toFixed(2)).join(', ') || 'N/A'}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>仓位</span>
+                            <span>${plan.position_size}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>时间框架</span>
+                            <span class="${aligned ? 'alignment-good' : 'alignment-bad'}">${aligned ? '一致' : '不一致'}</span>
+                        </div>
+                    </div>`;
+            } else if (plan && plan.range) {
+                html += `
+                    <div class="trading-plan">
+                        <h4>震荡区间</h4>
+                        <div class="plan-row">
+                            <span>区间</span>
+                            <span>${plan.range.map(r => r.toFixed(2)).join(' - ')}</span>
+                        </div>
+                        <div class="plan-row">
+                            <span>策略</span>
+                            <span>${plan.range_strategy || '观望'}</span>
+                        </div>
+                    </div>`;
+            }
+
+            html += `</div>`;
+            return html;
+        }
+
+        function render() {
+            if (!analysisData || !plansData) return;
+
+            document.getElementById('update-time').textContent = 
+                `最后更新: ${new Date(analysisData.generated_at).toLocaleString('zh-CN')}`;
+
+            let longCount = 0, shortCount = 0, neutralCount = 0, alignedCount = 0;
+
+            const markets = analysisData.markets;
+            const plans = plansData.plans;
+            let html = '';
+
+            const sections = [
+                { key: 'indices', title: '全球指数', class: 'indices' },
+                { key: 'commodities', title: '商品', class: 'commodities' },
+                { key: 'crypto', title: '加密货币', class: 'crypto' },
+                { key: 'forex', title: '外汇', class: 'forex' }
+            ];
+
+            for (const section of sections) {
+                const data = markets[section.key];
+                const planData = plans[section.key];
+                if (!data) continue;
+
+                const symbols = Object.keys(data);
+                if (symbols.length === 0) continue;
+
+                html += `<h2 class="section-title ${section.class}">${section.title}</h2>`;
+                html += `<div class="grid">`;
+
+                for (const sym of symbols) {
+                    const symData = data[sym];
+                    const symPlan = planData?.[sym];
+                    
+                    const daily = symData?.tfs?.daily;
+                    if (daily) {
+                        if (daily.total >= 2) longCount++;
+                        else if (daily.total <= -2) shortCount++;
+                        else neutralCount++;
+                        
+                        if (symPlan?.timeframe_alignment?.includes('ALIGNED')) {
+                            alignedCount++;
+                        }
+                    }
+
+                    html += renderCard(sym, symData.name, symData, symPlan);
+                }
+
+                html += `</div>`;
+            }
+
+            document.getElementById('content').innerHTML = html;
+            document.getElementById('total-long').textContent = longCount;
+            document.getElementById('total-short').textContent = shortCount;
+            document.getElementById('total-neutral').textContent = neutralCount;
+            document.getElementById('total-aligned').textContent = alignedCount;
+        }
+
+        loadData();
+        setInterval(loadData, 60000);
+    </script>
+</body>
+</html>

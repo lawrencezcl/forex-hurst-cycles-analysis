@@ -1,0 +1,970 @@
+{
+  "generated_at": "2026-02-15T14:36:32.463311",
+  "plans": {
+    "indices": {
+      "SPX": {
+        "symbol": "SPX",
+        "name": "S&P 500",
+        "current_price": 6836.169921875,
+        "score": -3,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          6897.2456,
+          7002.2798
+        ],
+        "stop_loss": 7142.3254,
+        "targets": [
+          6789.0498
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u504f\u7a7a",
+        "hourly_score": -3,
+        "timeframe_alignment": "ALIGNED - High confidence",
+        "key_levels": {
+          "resistance": [
+            7002.27978515625,
+            6993.47998046875,
+            6993.080078125
+          ],
+          "support": [
+            6899.330078125,
+            6885.740234375,
+            6870.7998046875
+          ],
+          "fib_levels": {
+            "0.236": 6888.914857421875,
+            "0.382": 6818.782317382813,
+            "0.5": 6762.099853515625,
+            "0.618": 6705.417389648437,
+            "0.786": 6624.716932617188
+          }
+        }
+      },
+      "ND100": {
+        "symbol": "ND100",
+        "name": "Nasdaq 100",
+        "current_price": 24732.73046875,
+        "score": -9,
+        "direction": "\u5f3a\u70c8\u770b\u7a7a",
+        "action": "\u79ef\u6781\u5356\u51fa",
+        "bias": "SHORT",
+        "confidence": "HIGH",
+        "entry_zone": [
+          25903.4293,
+          26112.7499
+        ],
+        "stop_loss": 26557.5563,
+        "targets": [
+          25282.2587
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u504f\u7a7a",
+        "hourly_score": -3,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            26165.080078125,
+            25873.1796875,
+            25840.0390625
+          ],
+          "support": [
+            25418.5390625,
+            25400.16015625,
+            25266.19921875
+          ],
+          "fib_levels": {
+            "0.236": 25619.67209375,
+            "0.382": 25282.2586796875,
+            "0.5": 25009.5546875,
+            "0.618": 24736.8506953125,
+            "0.786": 24348.5941640625
+          }
+        }
+      },
+      "DJI": {
+        "symbol": "DJI",
+        "name": "Dow Jones",
+        "current_price": 49500.9296875,
+        "score": 0,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          48428.1289,
+          50512.7891
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u5f3a\u70c8\u770b\u7a7a",
+        "hourly_score": -6,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            50512.7890625,
+            49653.12890625,
+            49633.3515625
+          ],
+          "support": [
+            48851.98046875,
+            48829.1015625,
+            48792.33984375
+          ],
+          "fib_levels": {
+            "0.236": 49383.79825,
+            "0.382": 48685.35478125,
+            "0.5": 48120.859375,
+            "0.618": 47556.363968749996,
+            "0.786": 46752.67559375
+          }
+        }
+      },
+      "JP225": {
+        "symbol": "JP225",
+        "name": "Nikkei 225",
+        "current_price": 56941.96875,
+        "score": 6,
+        "direction": "\u5f3a\u70c8\u770b\u591a",
+        "action": "\u79ef\u6781\u4e70\u5165",
+        "bias": "LONG",
+        "confidence": "HIGH",
+        "entry_zone": [
+          51154.9338,
+          51563.3564
+        ],
+        "stop_loss": 50287.0357,
+        "targets": [
+          51971.1757,
+          53125.1895
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u770b\u7a7a",
+        "hourly_score": -5,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            54782.828125,
+            54487.3203125,
+            54050.83984375
+          ],
+          "support": [
+            52950.1484375,
+            52655.1796875,
+            52637.66015625
+          ],
+          "fib_levels": {
+            "0.236": 55707.050671875,
+            "0.382": 54279.2031796875,
+            "0.5": 53125.189453125,
+            "0.618": 51971.1757265625,
+            "0.786": 50328.1731328125
+          }
+        }
+      },
+      "DAX": {
+        "symbol": "DAX",
+        "name": "DAX 40",
+        "current_price": 24914.880859375,
+        "score": 5,
+        "direction": "\u770b\u591a",
+        "action": "\u4e70\u5165",
+        "bias": "LONG",
+        "confidence": "MEDIUM",
+        "entry_zone": [
+          23480.3474,
+          23667.8153
+        ],
+        "stop_loss": 23081.9783,
+        "targets": [
+          25380.2501,
+          25762.867,
+          23922.7868
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": -1,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            25507.7890625,
+            25098.7109375,
+            25020.220703125
+          ],
+          "support": [
+            24349.5390625,
+            24272.619140625,
+            24266.330078125
+          ],
+          "fib_levels": {
+            "0.236": 24902.5131328125,
+            "0.382": 24528.06276953125,
+            "0.5": 24225.4248046875,
+            "0.618": 23922.78683984375,
+            "0.786": 23491.91244921875
+          }
+        }
+      },
+      "FTSE": {
+        "symbol": "FTSE",
+        "name": "FTSE 100",
+        "current_price": 10446.400390625,
+        "score": 5,
+        "direction": "\u770b\u591a",
+        "action": "\u4e70\u5165",
+        "bias": "LONG",
+        "confidence": "MEDIUM",
+        "entry_zone": [
+          10015.8922,
+          10095.8594
+        ],
+        "stop_loss": 9845.9619,
+        "targets": [
+          10429.0925,
+          10586.315,
+          9848.646
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": -1,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            10481.5,
+            10257.7998046875,
+            10226.5
+          ],
+          "support": [
+            10253.2001953125,
+            10141.599609375,
+            10125.2998046875
+          ],
+          "fib_levels": {
+            "0.236": 10273.39154296875,
+            "0.382": 10111.054228515624,
+            "0.5": 9979.85009765625,
+            "0.618": 9848.645966796876,
+            "0.786": 9661.846865234374
+          }
+        }
+      },
+      "CAC": {
+        "symbol": "CAC",
+        "name": "CAC 40",
+        "current_price": 8311.740234375,
+        "score": 3,
+        "direction": "\u504f\u591a",
+        "action": "\u53ef\u4e70",
+        "bias": "LONG",
+        "confidence": "LOW",
+        "entry_zone": [
+          8060.8537,
+          8141.0612
+        ],
+        "stop_loss": 7860.335,
+        "targets": [
+          8396.7197
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": 1,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            8396.7197265625,
+            8190.080078125,
+            8177.75
+          ],
+          "support": [
+            8175.08984375,
+            8087.47998046875,
+            8074.0400390625
+          ],
+          "fib_levels": {
+            "0.236": 8304.84044921875,
+            "0.382": 8222.864443359374,
+            "0.5": 8156.60986328125,
+            "0.618": 8090.355283203125,
+            "0.786": 7996.026728515625
+          }
+        }
+      },
+      "HSI": {
+        "symbol": "HSI",
+        "name": "Hang Seng",
+        "current_price": 26567.119140625,
+        "score": -3,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          27635.2581,
+          28056.0996
+        ],
+        "stop_loss": 28617.2216,
+        "targets": [
+          25649.3008
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u504f\u7a7a",
+        "hourly_score": -3,
+        "timeframe_alignment": "ALIGNED - High confidence",
+        "key_levels": {
+          "resistance": [
+            28056.099609375,
+            27397.650390625,
+            27206.83984375
+          ],
+          "support": [
+            26363.859375,
+            26295.029296875,
+            25960.33984375
+          ],
+          "fib_levels": {
+            "0.236": 27355.2833203125,
+            "0.382": 26921.72748046875,
+            "0.5": 26571.3193359375,
+            "0.618": 26220.91119140625,
+            "0.786": 25722.02501953125
+          }
+        }
+      },
+      "ASX": {
+        "symbol": "ASX",
+        "name": "ASX 200",
+        "current_price": 8917.599609375,
+        "score": -2,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          8843.8225,
+          8978.5
+        ],
+        "stop_loss": 9158.07,
+        "targets": [
+          8563.2002
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u5f3a\u70c8\u770b\u7a7a",
+        "hourly_score": -9,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            8978.5,
+            8943.5,
+            8915.5
+          ],
+          "support": [
+            8765.900390625,
+            8746.2001953125,
+            8683.7001953125
+          ],
+          "fib_levels": {
+            "0.236": 8934.65524609375,
+            "0.382": 8829.272474609375,
+            "0.5": 8744.10009765625,
+            "0.618": 8658.927720703125,
+            "0.786": 8537.665353515626
+          }
+        }
+      },
+      "SSEC": {
+        "symbol": "SSEC",
+        "name": "Shanghai Composite",
+        "current_price": 4082.072998046875,
+        "score": -2,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          4128.0032,
+          4190.8662
+        ],
+        "stop_loss": 4274.6835,
+        "targets": [
+          3859.0491
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u770b\u7a7a",
+        "hourly_score": -5,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            4190.8662109375,
+            4170.2138671875,
+            4142.56103515625
+          ],
+          "support": [
+            4101.830078125,
+            4080.2939453125,
+            4029.972900390625
+          ],
+          "fib_levels": {
+            "0.236": 4102.360967773438,
+            "0.382": 4047.6077241210937,
+            "0.5": 4003.3551025390625,
+            "0.618": 3959.1024809570313,
+            "0.786": 3896.098748535156
+          }
+        }
+      }
+    },
+    "commodities": {
+      "XAU": {
+        "symbol": "XAU",
+        "name": "Gold",
+        "current_price": 5046.2998046875,
+        "score": 4,
+        "direction": "\u770b\u591a",
+        "action": "\u4e70\u5165",
+        "bias": "LONG",
+        "confidence": "MEDIUM",
+        "entry_zone": [
+          4293.57,
+          4327.85
+        ],
+        "stop_loss": 4220.725,
+        "targets": [
+          5558.2692,
+          5642.0622,
+          4625.5809
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": 1,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            5586.2001953125,
+            5111.2998046875,
+            5082.2001953125
+          ],
+          "support": [
+            4655.0,
+            4588.39990234375,
+            4418.0
+          ],
+          "fib_levels": {
+            "0.236": 5219.3617607421875,
+            "0.382": 4992.419339355469,
+            "0.5": 4809.0001220703125,
+            "0.618": 4625.580904785156,
+            "0.786": 4364.441680175782
+          }
+        }
+      },
+      "XAG": {
+        "symbol": "XAG",
+        "name": "Silver",
+        "current_price": 77.96399688720703,
+        "score": -1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          56.3,
+          121.3
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u504f\u591a",
+        "hourly_score": 2,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            121.30000305175781,
+            117.19499969482422,
+            93.0
+          ],
+          "support": [
+            73.36000061035156,
+            73.16500091552734,
+            69.85600280761719
+          ],
+          "fib_levels": {
+            "0.236": 104.03070233154297,
+            "0.382": 93.34715188598634,
+            "0.5": 84.7125015258789,
+            "0.618": 76.07785116577148,
+            "0.786": 63.78445065307617
+          }
+        }
+      },
+      "WTI": {
+        "symbol": "WTI",
+        "name": "Crude Oil WTI",
+        "current_price": 62.88999938964844,
+        "score": 1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          56.65,
+          66.48
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u770b\u591a",
+        "hourly_score": 4,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            66.4800033569336,
+            65.83000183105469,
+            65.52999877929688
+          ],
+          "support": [
+            62.20000076293945,
+            61.119998931884766,
+            58.70000076293945
+          ],
+          "fib_levels": {
+            "0.236": 63.76600245666504,
+            "0.382": 62.08700189971924,
+            "0.5": 60.73000144958496,
+            "0.618": 59.37300099945068,
+            "0.786": 57.44100035858154
+          }
+        }
+      },
+      "BRENT": {
+        "symbol": "BRENT",
+        "name": "Brent Crude",
+        "current_price": 67.75,
+        "score": 1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          60.59,
+          71.88
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u5f3a\u70c8\u770b\u591a",
+        "hourly_score": 8,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            71.87999725341797,
+            70.72000122070312,
+            69.75
+          ],
+          "support": [
+            66.58000183105469,
+            65.19000244140625,
+            63.2599983215332
+          ],
+          "fib_levels": {
+            "0.236": 68.77423818969727,
+            "0.382": 66.8528787689209,
+            "0.5": 65.29999923706055,
+            "0.618": 63.74711970520019,
+            "0.786": 61.5362403717041
+          }
+        }
+      },
+      "NG": {
+        "symbol": "NG",
+        "name": "Natural Gas",
+        "current_price": 3.243000030517578,
+        "score": -3,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          7.7096,
+          7.827
+        ],
+        "stop_loss": 7.9835,
+        "targets": [
+          3.155
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u5f3a\u70c8\u770b\u591a",
+        "hourly_score": 8,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            7.827000141143799,
+            5.495999813079834,
+            4.7210001945495605
+          ],
+          "support": [
+            4.267000198364258,
+            3.8420000076293945,
+            3.796999931335449
+          ],
+          "fib_levels": {
+            "0.236": 6.689244117736816,
+            "0.382": 5.985378103256226,
+            "0.5": 5.416500091552734,
+            "0.618": 4.847622079849243,
+            "0.786": 4.037694063186645
+          }
+        }
+      },
+      "COPPER": {
+        "symbol": "COPPER",
+        "name": "Copper",
+        "current_price": 5.802999973297119,
+        "score": -3,
+        "direction": "\u504f\u7a7a",
+        "action": "\u53ef\u5356",
+        "bias": "SHORT",
+        "confidence": "LOW",
+        "entry_zone": [
+          6.4104,
+          6.508
+        ],
+        "stop_loss": 6.6382,
+        "targets": [
+          5.237
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u770b\u591a",
+        "hourly_score": 4,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            6.507999897003174,
+            6.078999996185303,
+            6.019000053405762
+          ],
+          "support": [
+            5.700500011444092,
+            5.671999931335449,
+            5.650000095367432
+          ],
+          "fib_levels": {
+            "0.236": 6.133231939315796,
+            "0.382": 5.901383965492249,
+            "0.5": 5.71399998664856,
+            "0.618": 5.52661600780487,
+            "0.786": 5.259832037925721
+          }
+        }
+      }
+    },
+    "crypto": {
+      "BTC": {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "current_price": 70488.8671875,
+        "score": 2,
+        "direction": "\u504f\u591a",
+        "action": "\u53ef\u4e70",
+        "bias": "LONG",
+        "confidence": "LOW",
+        "entry_zone": [
+          69783.9785,
+          71193.7559
+        ],
+        "stop_loss": 68726.6455,
+        "targets": [
+          97860.6016
+        ],
+        "position_size": "Light (1-2%)",
+        "risk_reward": "1:1.5",
+        "hourly_trend": "\u770b\u591a",
+        "hourly_score": 5,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            97860.6015625,
+            94762.0703125,
+            91100.25
+          ],
+          "support": [
+            90055.0234375,
+            89233.875,
+            87231.5703125
+          ],
+          "fib_levels": {
+            "0.236": 88943.01153125,
+            "0.382": 83426.197359375,
+            "0.5": 78967.40234375,
+            "0.618": 74508.607328125,
+            "0.786": 68160.492390625
+          }
+        }
+      },
+      "ETH": {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "current_price": 2092.672119140625,
+        "score": 1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": 1,
+        "timeframe_alignment": "ALIGNED - High confidence",
+        "key_levels": {
+          "resistance": [
+            3397.897705078125,
+            3367.167724609375,
+            3303.5634765625
+          ],
+          "support": [
+            3251.814453125,
+            3068.07275390625,
+            3052.509765625
+          ],
+          "fib_levels": {
+            "0.236": 3008.66998046875,
+            "0.382": 2767.8765576171872,
+            "0.5": 2573.2626953125,
+            "0.618": 2378.6488330078128,
+            "0.786": 2101.5714697265626
+          }
+        }
+      }
+    },
+    "forex": {
+      "EURUSD": {
+        "symbol": "EURUSD",
+        "name": "EUR/USD",
+        "current_price": 1.1868449449539185,
+        "score": 0,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          1.1585,
+          1.2024
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u9707\u8361",
+        "hourly_score": 1,
+        "timeframe_alignment": "ALIGNED - High confidence",
+        "key_levels": {
+          "resistance": [
+            1.2023565769195557,
+            1.192847728729248,
+            1.1809163093566895
+          ],
+          "support": [
+            1.176747441291809,
+            1.1704120635986328,
+            1.166003942489624
+          ],
+          "fib_levels": {
+            "0.236": 1.1898149075508118,
+            "0.382": 1.1820560781955718,
+            "0.5": 1.1757852435112,
+            "0.618": 1.169514408826828,
+            "0.786": 1.1605864408016204
+          }
+        }
+      },
+      "GBPUSD": {
+        "symbol": "GBPUSD",
+        "name": "GBP/USD",
+        "current_price": 1.365411400794983,
+        "score": 4,
+        "direction": "\u770b\u591a",
+        "action": "\u4e70\u5165",
+        "bias": "LONG",
+        "confidence": "MEDIUM",
+        "entry_zone": [
+          1.3392,
+          1.3499
+        ],
+        "stop_loss": 1.3165,
+        "targets": [
+          1.3778,
+          1.3985,
+          1.3348
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u5f3a\u70c8\u770b\u591a",
+        "hourly_score": 9,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            1.3846771717071533,
+            1.3733245134353638,
+            1.371290683746338
+          ],
+          "support": [
+            1.36275053024292,
+            1.3509862422943115,
+            1.3403388261795044
+          ],
+          "fib_levels": {
+            "0.236": 1.36564586019516,
+            "0.382": 1.353872252225876,
+            "0.5": 1.3443565964698792,
+            "0.618": 1.3348409407138824,
+            "0.786": 1.3212932274341582
+          }
+        }
+      },
+      "USDJPY": {
+        "symbol": "USDJPY",
+        "name": "USD/JPY",
+        "current_price": 152.8209991455078,
+        "score": -9,
+        "direction": "\u5f3a\u70c8\u770b\u7a7a",
+        "action": "\u79ef\u6781\u5356\u51fa",
+        "bias": "SHORT",
+        "confidence": "HIGH",
+        "entry_zone": [
+          157.8436,
+          159.1191
+        ],
+        "stop_loss": 161.8296,
+        "targets": [
+          156.7029
+        ],
+        "position_size": "Standard (2-3%)",
+        "risk_reward": "1:2 or better",
+        "hourly_trend": "\u5f3a\u70c8\u770b\u7a7a",
+        "hourly_score": -9,
+        "timeframe_alignment": "ALIGNED - High confidence",
+        "key_levels": {
+          "resistance": [
+            159.43800354003906,
+            159.20700073242188,
+            157.6490020751953
+          ],
+          "support": [
+            157.4250030517578,
+            156.15899658203125,
+            155.74200439453125
+          ],
+          "fib_levels": {
+            "0.236": 157.74824267578126,
+            "0.382": 156.7028821411133,
+            "0.5": 155.85800170898438,
+            "0.618": 155.01312127685546,
+            "0.786": 153.8102406616211
+          }
+        }
+      },
+      "AUDUSD": {
+        "symbol": "AUDUSD",
+        "name": "AUD/USD",
+        "current_price": 0.707764208316803,
+        "score": 1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "range": [
+          0.6662,
+          0.7147
+        ],
+        "range_strategy": "Buy at support, sell at resistance",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u5f3a\u70c8\u770b\u591a",
+        "hourly_score": 7,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            0.7147298455238342,
+            0.7093999981880188,
+            0.6768001914024353
+          ],
+          "support": [
+            0.6910181641578674,
+            0.6897897720336914,
+            0.6668400764465332
+          ],
+          "fib_levels": {
+            "0.236": 0.6976033897399903,
+            "0.382": 0.6870082094669342,
+            "0.5": 0.6784449815750122,
+            "0.618": 0.6698817536830902,
+            "0.786": 0.657690039396286
+          }
+        }
+      },
+      "USDCAD": {
+        "symbol": "USDCAD",
+        "name": "USD/CAD",
+        "current_price": 1.3617000579833984,
+        "score": -1,
+        "direction": "\u9707\u8361",
+        "action": "\u89c2\u671b",
+        "bias": "NEUTRAL",
+        "confidence": "N/A",
+        "position_size": "Very Light or None",
+        "entry_zone": null,
+        "stop_loss": null,
+        "targets": [],
+        "hourly_trend": "\u504f\u7a7a",
+        "hourly_score": -3,
+        "timeframe_alignment": "MISALIGNED - Reduce position size",
+        "key_levels": {
+          "resistance": [
+            1.3923699855804443,
+            1.391319990158081,
+            1.3869400024414062
+          ],
+          "support": [
+            1.3938499689102173,
+            1.3854899406433105,
+            1.3799999952316284
+          ],
+          "fib_levels": {
+            "0.236": 1.3977162289619445,
+            "0.382": 1.3882919228076935,
+            "0.5": 1.3806750178337097,
+            "0.618": 1.373058112859726,
+            "0.786": 1.3622137057781218
+          }
+        }
+      }
+    }
+  }
+}
